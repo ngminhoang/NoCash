@@ -12,7 +12,6 @@
     />
     <item
             android:id="@+id/add_new_record"
-
             android:icon="@drawable/baseline_add_circle_outline_24"
             android:title="@string/add_new"
     />

@@ -7,7 +7,7 @@
 
     <fragment
             android:id="@+id/fragment_home"
-            android:name="cash.home.HomeFragment"
+            android:name="com.org.cash.home.HomeFragment"
             android:label="Main screen"
             tools:layout="@layout/fragment_home">
         <!--        <action-->

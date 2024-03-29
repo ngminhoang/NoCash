@@ -1,25 +1,34 @@
 package com.org.cash;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import androidx.navigation.fragment.NavHostFragment;
+import androidx.room.Room;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import com.org.cash.DAO.CategoryDao;
+import com.org.cash.database.CategoryDb;
 import com.org.cash.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import com.org.cash.model.Category;
+import com.org.cash.DAO.DatabaseHelper;
 
+import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private NavController navController;
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
-
+    private DatabaseHelper dbHelper;
+    private SQLiteDatabase database;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,8 +46,9 @@ public class MainActivity extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.fragment_home, R.id.fragment_home, R.id.fragment_home,R.id.fragment_home,R.id.fragment_home
         ).build();
-
-
+//        CategoryDb db = Room.databaseBuilder(getApplicationContext(),
+//        CategoryDb.class, "category").build();
+//        System.out.println(db.categoryDao().getAll());
 //
 //        setSupportActionBar(binding.toolbar);
 //
