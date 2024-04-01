@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">TestAndroid2</string>
+    <string name="app_name">NoCash</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -16,5 +18,14 @@
     <string name="profile">Profile</string>
     <string name="menu">Menu</string>
     <string name="font_family">sans-serif-light</string>
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_statistics">Statistics</string>
+    <string name="title_add_record">Add record</string>
+    <string name="title_budget">Budget</string>
+    <string name="account">Account</string>
+    <string name="setting">Setting</string>
+    <string name="help_center">Help center</string>
+    <string name="contact">Contact</string>
 </resources>

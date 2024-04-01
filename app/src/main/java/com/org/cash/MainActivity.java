@@ -33,15 +33,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+//        binding = ActivityMainBinding.inflate(getLayoutInflater());
+//        setContentView(binding.getRoot());
 
         setContentView(R.layout.activity_main);
         Log.i("MainActivity", "onCreate called");
 
         BottomNavigationView bottomNav = findViewById(R.id.nav_view);
 
-        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
+        //NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
 
         appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.fragment_home, R.id.fragment_home, R.id.fragment_home,R.id.fragment_home,R.id.fragment_home
